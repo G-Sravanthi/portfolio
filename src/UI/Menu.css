@@ -1,0 +1,11 @@
+li {
+  display: inline-block;
+  visibility: hidden;
+  color: #551E2B;
+  -webkit-transition: color 1s, opacity 1s;
+  transition: color 1s, opacity 1s;
+}
+li:hover {
+  visibility: visible;
+  color: #E04E27;
+}
