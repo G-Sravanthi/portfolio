@@ -60,7 +60,7 @@ const WebProjects = (props) => {
           </article>
         </div>
         <div className="tile is-parent is-8">
-          <article onClick={() => {props.clicked('portfolio')}} className="tile is-child box" style={{background: '#551E2B', color: '#89CDD5', filter: 'drop-shadow(0 3px 5px #3D3D3D)', cursor: 'pointer'}}>
+          <article onClick={() => {props.clicked('writing-portfolio')}} className="tile is-child box" style={{background: '#551E2B', color: '#89CDD5', filter: 'drop-shadow(0 3px 5px #3D3D3D)', cursor: 'pointer'}}>
             <p className="title" style={{color: '#137D8F'}}>MRM Portfolio</p>
             <p className="subtitle" style={{color: '#89CDD5'}}>Non-Fiction Creative Writing</p>
             <div className="content">

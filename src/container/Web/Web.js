@@ -2,12 +2,13 @@ import React, {Component} from 'react'
 import WebProjects from '../../component/WebProjects'
 import classes from './Web.css'
 
-class Business extends Component {
+class Web extends Component {
   menuHandler = (id) => {
     this.props.history.push('/'+id)
   }
   chosenHandler = (id) => {
-    console.log(id);
+    console.log(this.props.history);
+    this.props.history.push('/'+id)
   }
   render() {
     return (
@@ -36,4 +37,4 @@ class Business extends Component {
   }
 }
 
-export default Business
+export default Web

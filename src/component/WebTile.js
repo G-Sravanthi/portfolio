@@ -7,7 +7,7 @@ const WebTile = (props) => {
         <div className="tile is-vertical is-7">
           <div className="tile is-parent is-vertical">
             <article className="tile is-child notification">
-              <p className="title">Title</p>
+              <p className="title">{props.title}</p>
               <p className="subtitle">subtitle</p>
             </article>
             <article className="tile is-child notification">
