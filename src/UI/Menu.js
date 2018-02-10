@@ -2,6 +2,7 @@ import React from 'react'
 import classes from './Menu.css'
 
 const Menu = (props) => {
+  console.log(props);
   return(
     <div style={{display: 'flex'}}>
       <aside className='menu' style={{marginTop: '100px', width: '80px'}}>

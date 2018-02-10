@@ -1,27 +1,39 @@
 import React, {Component} from 'react'
 import WebProjects from '../../component/WebProjects'
-import Menu from '../../UI/Menu'
+import classes from './Web.css'
 
-class Web extends Component {
-  state = {
-
-  }
+class Business extends Component {
   menuHandler = (id) => {
     this.props.history.push('/'+id)
   }
+  chosenHandler = (id) => {
+    console.log(id);
+  }
   render() {
     return (
-      <div style={{color: 'red', width: '100vw'}}>
-        <Menu
-          one='business'
-          two='interests'
-          three='about'
-          clicked={(id) => this.menuHandler(id)}>
-            <WebProjects />
-          </Menu>
+      <div style={{display: 'flex'}}>
+        <aside className='menu' style={{marginTop: '100px', width: '80px'}}>
+          <ul className='menu-list'>
+            <li onClick={() => this.menuHandler('business')} style={{marginBottom: '40px', verticalAlign: 'middle'}}>
+              <i className="fas fa-dot-circle" style={{fontSize: '40px', visibility: 'visible'}}></i>
+              <p className={classes.Link}>{'business'}</p>
+            </li>
+            <li onClick={() => this.menuHandler('interests')} style={{marginBottom: '40px', verticalAlign: 'middle'}}>
+              <i className="fas fa-dot-circle" style={{fontSize: '40px', visibility: 'visible'}}></i>
+              <p className={classes.Link}>{'interests'}</p>
+            </li>
+            <li onClick={() => this.menuHandler('about')} style={{marginBottom: '40px', verticalAlign: 'middle'}}>
+              <i className="fas fa-dot-circle" style={{fontSize: '40px', visibility: 'visible'}}></i>
+              <p className={classes.Link}>{'about'}</p>
+            </li>
+          </ul>
+        </aside>
+        <div style={{width: '90%', marginTop: '20px'}}>
+          <WebProjects clicked={(id) =>this.chosenHandler(id)}/>
+        </div>
       </div>
     )
   }
 }
 
-export default Web
+export default Business
