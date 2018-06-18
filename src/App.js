@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Switch, Route} from 'react-router-dom'
-import Interests from './container/Interests/Interests'
-import Business from './container/Business/Business'
+// import Interests from './container/Interests/Interests'
+// import Business from './container/Business/Business'
 import Web from './container/Web/Web'
 import RecipeBook from './container/RecipeBook/RecipeBook'
 import WritingPortfolio from './container/WritingPortfolio/WritingPortfolio'
@@ -16,8 +16,8 @@ class App extends Component {
       <div className={classes.App}>
         <div className={classes.Filter}>
           <Switch>
-            <Route path='/interests' component={Interests}/>
-            <Route path='/business' component={Business}/>
+            {/* <Route path='/interests' component={Interests}/>
+            <Route path='/business' component={Business}/> */}
             <Route path='/web' component={Web}/>
             <Route path='/recipe-book' component={RecipeBook} />
             <Route path='/writing-portfolio' component={WritingPortfolio} />

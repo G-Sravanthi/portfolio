@@ -1,3 +1,161 @@
+.About {
+  font-family: 'Quicksand', sans-serif;
+  padding: 15px 0;
+  overflow: scroll;
+  height: 100%;
+  width: 100vw;
+  background: #000000;
+  text-align: left;
+}
+.Images {
+  margin: 0 auto;
+  height: 500px;
+  width: 900px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../../assets/val.jpg');
+  display: block;
+}
+.Arrow{
+  margin: 40px 0 10px 0;
+  font-size: 40px;
+  color: #541F2C;
+  text-align: center;
+  -webkit-animation: arrow infinite;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+  animation: arrow infinite;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+.Arrow svg {
+  margin: 0 40px;
+}
+.Arrow a {
+  text-decoration: none;
+  color: #541F2C;
+  -webkit-animation: arrow infinite;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+  animation: arrow infinite;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+.Arrow a:hover{
+  color: #541F2C;
+}
+.InfoTitle {
+  color: #666666;
+  font-weight: 600;
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+  font-size: 30px;
+  opacity: 0;
+  -webkit-animation: appear;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards;
+  animation: appear;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+.Info {
+  text-align: justify;
+  color: #A8A8A8;
+  font-weight: 600;
+  margin: 20px auto;
+  width: 60%;
+  opacity: 0;
+  font-size: 20px;
+  -webkit-animation: appear;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards;
+  animation: appear;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+nav {
+  display: block;
+  visibility: hidden;
+  color: #551E2B;
+  -webkit-transition: color 1s, opacity 1s;
+  transition: color 1s, opacity 1s;
+}
+nav:hover {
+  visibility: visible;
+  color: #E04E27;
+}
 div {
   font-family: 'Quicksand', sans-serif;
+}
+
+/* h1 {
+  margin: 0 10px;
+  text-align: center;
+  color: white;
+  opacity: 0;
+  font-size: 40px;
+  -webkit-animation: appear;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards;
+  animation: appear;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+h2 {
+  margin: 0 40px;
+  text-align: right;
+  color: #303030;
+  opacity: 0;
+  font-size: 20px;
+  animation: appear;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+} */
+@-webkit-keyframes arrow {
+  from {color: #541F2C;}
+  to {color: #DE4F31;}
+}
+
+@keyframes arrow {
+  from {color: #541F2C;}
+  to {color: #DE4F31;}
+}
+@-webkit-keyframes appear {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes appear {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@media (max-width: 890px) {
+  .Images {
+    width: 100vw;
+    background-size: cover;
+    background-image: url('../../assets/val.jpg');
+    display: block;
+  }
+  .Arrow svg {
+    margin: 0 20px;
+  }
 }

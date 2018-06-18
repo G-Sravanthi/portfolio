@@ -10,17 +10,17 @@ class Home extends Component {
       <div className={classes.Home}>
         <LandingTile>
           <Link to='/web'>
-            <h1 className={classes.Title}>Web</h1>
+            <h1 className={classes.Title}>Projects</h1>
           </Link>
         </LandingTile>
-        <LandingTile>
+        {/* <LandingTile>
           <Link to='/business'>
             <h1 className={classes.Title}>Business</h1>
           </Link>
-        </LandingTile>
+        </LandingTile> */}
         <LandingTile>
-          <Link to='/interests'>
-            <h1 className={classes.Title}>Interests</h1>
+          <Link to='/about'>
+            <h1 className={classes.Title}>About</h1>
           </Link>
         </LandingTile>
       </div>

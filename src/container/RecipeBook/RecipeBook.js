@@ -28,6 +28,14 @@ class RecipeBook extends Component {
         <div style={{width: '90%', marginTop: '20px'}}>
           <WebTile
             title='Recipe Book'
+            subtitle='Recipe Book helps users easily record their favorite recipes in a sequential process.  First a user is prompted to add all recipe ingredients, including the amount and unit measurement of each recorded ingredient. Afterwards, step-by-step directions are saved to the recipe along with preparation and cook time.'
+            videoOne='https://www.youtube.com/embed/aQMWzccmMHk?modestbranding=1&autoplay=1&showinfo=0&controls=0&rel=0'
+            videoTwo='https://www.youtube.com/embed/3UVuNp9ItM8?modestbranding=1&autoplay=1&showinfo=0&controls=0&rel=0'
+            link='https://recipe-builder-7bfb0.firebaseapp.com/'
+            mobile='Yes'
+            gitHub='https://github.com/JRLuckett/recipe-book'
+            futureOne='Sign-in through AuthO'
+            futureTwo='Add nutrition data from Edmam API'
           />
         </div>
       </div>

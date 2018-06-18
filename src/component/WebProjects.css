@@ -1,0 +1,10 @@
+main {
+  background-color: none;
+  box-sizing: border-box;
+  border-radius: 10px;
+  transition: background-color 1s;
+  -web-kit-transition: background-color 1s;
+}
+main:hover{
+  background-color: RGBA(19, 125, 143, .7);
+}

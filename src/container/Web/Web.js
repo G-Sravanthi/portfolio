@@ -15,14 +15,14 @@ class Web extends Component {
       <div style={{display: 'flex'}}>
         <aside className='menu' style={{marginTop: '100px', width: '80px'}}>
           <ul className='menu-list'>
-            <li onClick={() => this.menuHandler('business')} style={{marginBottom: '40px', verticalAlign: 'middle'}}>
+            {/* <li onClick={() => this.menuHandler('business')} style={{marginBottom: '40px', verticalAlign: 'middle'}}>
               <i className="fas fa-dot-circle" style={{fontSize: '40px', visibility: 'visible'}}></i>
               <p className={classes.Link}>{'business'}</p>
             </li>
             <li onClick={() => this.menuHandler('interests')} style={{marginBottom: '40px', verticalAlign: 'middle'}}>
               <i className="fas fa-dot-circle" style={{fontSize: '40px', visibility: 'visible'}}></i>
               <p className={classes.Link}>{'interests'}</p>
-            </li>
+            </li> */}
             <li onClick={() => this.menuHandler('about')} style={{marginBottom: '40px', verticalAlign: 'middle'}}>
               <i className="fas fa-dot-circle" style={{fontSize: '40px', visibility: 'visible'}}></i>
               <p className={classes.Link}>{'about'}</p>

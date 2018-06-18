@@ -11,14 +11,14 @@ const Menu = (props) => {
             <i className="fas fa-dot-circle" style={{fontSize: '40px', visibility: 'visible'}}></i>
             <p className={classes.Link}>{props.one}</p>
           </li>
-          <li onClick={() => props.clicked(props.two)} style={{marginBottom: '40px', verticalAlign: 'middle'}}>
+          {/* <li onClick={() => props.clicked(props.two)} style={{marginBottom: '40px', verticalAlign: 'middle'}}>
             <i className="fas fa-dot-circle" style={{fontSize: '40px', visibility: 'visible'}}></i>
             <p className={classes.Link}>{props.two}</p>
           </li>
           <li onClick={() => props.clicked(props.three)} style={{marginBottom: '40px', verticalAlign: 'middle'}}>
             <i className="fas fa-dot-circle" style={{fontSize: '40px', visibility: 'visible'}}></i>
             <p className={classes.Link}>{props.three}</p>
-          </li>
+          </li> */}
         </ul>
       </aside>
       <div style={{width: '90%', marginTop: '20px'}}>
